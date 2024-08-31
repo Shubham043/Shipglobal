@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Word Scramble Game</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="game-container">
+            <h2>Word Scramble</h2>
+            <div class="line"></div>
+            <div id="scrambled-word">A G E E X C N H</div>
+            <p id="hint">Hint: The act of trading</p>
+            <p id="time-left">Time Left: <span id="timer">20s</span></p>
+            <input
+                type="text"
+                id="user-input"
+                placeholder="Enter a valid word"
+            />
+            <div class="buttons">
+                <button id="refresh-word">Refresh Word</button>
+                <button id="check-word">Check Word</button>
+            </div>
+            <p id="feedback"></p>
+            <p class="attempts">Attempts: <span id="attempts">0</span></p>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
